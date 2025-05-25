@@ -1,0 +1,7 @@
+:root {
+    --lightBlue: hsl(205 75% 85%);
+    --mediumBlue: hsl(205 85% 80%);
+    --darkBlue: hsl(205 95% 75%);
+    --text: hsl(0 0% 0%);
+    --body: hsl(0 0% 100%);
+}

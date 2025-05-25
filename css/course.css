@@ -1,0 +1,26 @@
+main {
+    gap: 48px;
+}
+
+main img {
+    width: 256px;
+    border-radius: 16px;
+    background-color: var(--text);
+}
+
+main p {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 640px) {
+    main p {
+        flex-direction: column;
+    }
+
+    .smallInvert {
+        flex-direction: column-reverse;
+    }
+}

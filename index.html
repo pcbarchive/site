@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Nœuds.fr</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link id="theme" rel="stylesheet" href="./css/light.css">
+    <link rel="icon" type="image/x-icon" href="./images/common/logo.svg">
+    <script type="module" src="./script.js"></script>
+</head>
+
+<body>
+    <div>
+        <header>
+            <img id="hamburgerMenu" src="./images/common/hamburgerMenu.svg">
+            <logo>
+                <img src="./images/common/logo.svg">
+                <a href="./index.html">Nœuds.fr</a>
+            </logo>
+            <nav>
+                <a href="./index.html">Accueil</a>
+                <a href="./about.html">À propos de nous</a>
+                <a href="./contact.html">Contactez nous</a>
+                <a id="coursesLink">Cours</a>
+            </nav>
+            <div class="sectionTheme">
+                <label class="toggleSwitch">
+                    <div class="toggleIconsContainer">
+                        <img class="toggleIcon" src="images/common/moon.svg" alt="">
+                        <img class="toggleIcon" src="images/common/sun.svg" alt="">
+                    </div>
+                    <input id="themeSwitch" type="checkbox" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </header>
+        <header id="coursesHeader">
+            <nav>
+                <a href="./course1.html">Nœud plat</a>
+                <a href="./course2.html">Échelle en corde</a>
+                <a href="./course3.html">Nœud de chaise</a>
+                <a href="./course4.html">Nœud de cabestan</a>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <section id="banner">
+            <div id="bannerText">Apprenez rapidement à faire les nœuds les plus communs!</div>
+            <div id="bannerCourses">
+                <a class="bannerCourse" href="./course1.html">
+                    <div id="noeud1"></div>
+                    <div>Nœud plat</div>
+                </a>
+                <a class="bannerCourse" href="./course2.html">
+                    <div id="noeud2"></div>
+                    <div>Échelle en corde</div>
+                </a>
+                <a class="bannerCourse" href="./course3.html">
+                    <div id="noeud3"></div>
+                    <div>Nœud de chaise</div>
+                </a>
+                <a class="bannerCourse" href="./course4.html">
+                    <div id="noeud4"></div>
+                    <div>Nœud de cabestan</div>
+                </a>
+            </div>
+        </section>
+        <section id="method">
+            <h2>Méthode</h2>
+            <h3>Nous utilisons une manière d'enseigner compréhensive suivant un ordre logique:</h3>
+            <grid>
+                <div class="step">Trouver le type de corde approprié</div>
+                <div class="horizontalArrow"><img src="./images/method/rightArrow.svg"></div>
+                <div class="step">Déterminer la longueur requise</div>
+                <div class="verticalArrow"><img src="./images/method/checkmark.svg"></div>
+                <div></div>
+                <div class="verticalArrow"><img src="./images/method/downArrow.svg"></div>
+                <div class="step">Appliquer le nœud sur place</div>
+                <div class="horizontalArrow"><img src="./images/method/leftArrow.svg"></div>
+                <div class="step">Exécuter et mémoriser les mouvements</div>
+            </grid>
+            <h3>Ainsi, vous serez habitué après seulement quelques cours!</h3>
+        </section>
+        <section id="comments">
+            <h2>Commentaires</h2>
+            <comment>
+                <pfp id="pfp1"></pfp>
+                <commentContent>
+                    <p>Il m'est désormais aisé de nouer mon nœud papillon sans requêrir à de l'aide externe. Je n'ai cependant pas trouvé les autres tutoriels applicables dans le reste de mon existence.</p>
+                    <stars>
+                        <star></star>
+                        <star></star>
+                        <star></star>
+                        <emptyStar></emptyStar>
+                        <emptyStar></emptyStar>
+                    </stars>
+                </commentContent>
+            </comment>
+            <comment>
+                <pfp id="pfp2"></pfp>
+                <commentContent>
+                    <p>C'est fou tout ce que j'ai appris sur votre site! Même avec mes gros doigts boudinés, j'arrive quand même à attacher des choses sur ma voiture en utilisant vos techniques.</p>
+                    <stars>
+                        <star></star>
+                        <star></star>
+                        <star></star>
+                        <star></star>
+                        <emptyStar></emptyStar>
+                    </stars>
+                </commentContent>
+            </comment>
+            <comment>
+                <pfp id="pfp3"></pfp>
+                <commentContent>
+                    <p>Grâce aux cours de nœuds de Nœuds.fr, j'ai pû survivre quand je suis resté pris dans le bois à manger de l'ours! Je recommande fortement.</p>
+                    <stars>
+                        <star></star>
+                        <star></star>
+                        <star></star>
+                        <star></star>
+                        <star></star>
+                    </stars>
+                </commentContent>
+            </comment>
+            <comment>
+                <pfp id="pfp4"></pfp>
+                <commentContent>
+                    <p>Je n'ai réussi à accomplir aucun nœud, mais le site ne me laisse pas mettre zéro étoiles.</p>
+                    <stars>
+                        <star></star>
+                        <emptyStar></emptyStar>
+                        <emptyStar></emptyStar>
+                        <emptyStar></emptyStar>
+                        <emptyStar></emptyStar>
+                    </stars>
+                </commentContent>
+            </comment>
+        </section>
+    </main>
+    <footer>
+        <a href="./about.html">À propos</a>
+        <a href="./contact.html">Contactez nous</a>
+        <a href="https://youtu.be/j7RlsUdPPns" target="_blank">Renaud Beaulieu, Aucun droit réservé</a>
+    </footer>
+</body>
+
+</html>

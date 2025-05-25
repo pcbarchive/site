@@ -1,0 +1,42 @@
+p {
+    font-size: 16px;
+}
+
+teachers {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+teacher {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.invertTeacher {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+teacher img {
+    width: 196px;
+    height: 196px;
+    border-radius: 32px;
+    border: solid 8px var(--lightBlue);
+}
+
+teacher h2 {
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 1088px) {
+
+    teacher,
+    .invertTeacher {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 640px) {}

@@ -1,0 +1,15 @@
+:root {
+    --lightBlue: hsl(205 100% 20%);
+    --mediumBlue: hsl(205 100% 15%);
+    --darkBlue: hsl(205 100% 10%);
+    --text: hsl(0 0% 100%);
+    --body: hsl(0 0% 0%);
+}
+
+#hamburgerMenu,
+.horizontalArrow,
+.verticalArrow,
+star,
+emptyStar {
+    filter: invert(1);
+}

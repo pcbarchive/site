@@ -1,0 +1,246 @@
+@font-face {
+    font-family: cocogoose;
+    src: url(../fonts/cocogoose.otf);
+}
+
+* {
+    /*outline-offset: -1px;
+    outline: solid 1px #0f0 !important;
+    /*For wireframe kiddies*/
+    color: var(--text);
+    font-family: cocogoose, sans-serif;
+    margin: 0;
+    font-size: 0;
+    text-decoration: none;
+    transition: .2s;
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--darkBlue) var(--lightBlue);
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: var(--body);
+}
+
+header {
+    display: flex;
+    height: 64px;
+    gap: 24px;
+    padding: 0 12px;
+    background-color: var(--lightBlue);
+}
+
+#hamburgerMenu {
+    display: none;
+    cursor: pointer;
+}
+
+logo {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+logo a {
+    font-size: 32px;
+}
+
+logo img {
+    height: 48px;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    cursor: pointer;
+    flex-grow: 1;
+    justify-content: center;
+    font-size: 18px;
+    padding: 0 24px;
+    background-color: var(--lightBlue);
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: var(--mediumBlue);
+}
+
+.sectionTheme {
+    display: flex;
+    align-items: center;
+}
+
+.toggleSwitch {
+    width: 64px;
+    height: 32px;
+    background-color: var(--darkBlue);
+    border-radius: 18px;
+    position: relative;
+    cursor: pointer;
+    padding: 2px;
+}
+
+#themeSwitch {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    height: 28px;
+    width: 28px;
+    background-color: var(--lightBlue);
+    border-radius: 100%;
+}
+
+#themeSwitch:checked+.slider {
+    transform: translateX(32px);
+}
+
+.toggleIconsContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.toggleIcon {
+    height: 20px;
+    width: 20px;
+    user-select: none;
+}
+
+#coursesHeader {
+    display: none;
+    padding: 0;
+}
+
+#coursesHeader.showCoursesHeader {
+    display: flex;
+}
+
+main {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+footer {
+    display: flex;
+    height: 64px;
+    padding: 0 12px;
+    background-color: var(--lightBlue);
+    justify-content: center;
+}
+
+footer a {
+    display: flex;
+    font-size: 20px;
+    height: 100%;
+    align-items: center;
+    padding: 0 32px;
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 16px;
+    text-align: center;
+}
+
+p {
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 1088px) {
+    #coursesHeader nav {
+        display: flex;
+    }
+
+    #coursesHeader nav a {
+        font-size: 12px;
+    }
+
+    #hamburgerMenu {
+        display: block;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .showLogo {
+        display: none;
+    }
+
+    .show {
+        display: flex;
+    }
+
+    .show a {
+        font-size: 16px;
+        padding: 0 12px;
+    }
+
+    main {
+        width: 576px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 32px;
+        grid-row-gap: 32px;
+    }
+
+    footer a {
+        font-size: 14px;
+        padding: 0 16px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    header {
+        gap: 0;
+    }
+
+    .show a {
+        font-size: 10px;
+        padding: 0 8px;
+    }
+
+    main {
+        width: 384px;
+    }
+
+    footer {
+        height: 128px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer a {
+        font-size: 12px;
+        padding: 8px;
+    }
+}

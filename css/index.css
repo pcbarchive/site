@@ -1,0 +1,317 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+}
+
+#banner {
+    grid-area: 1 / 1 / 2 / 3;
+    display: flex;
+    width: 100%;
+    gap: 32px;
+}
+
+#bannerText {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+}
+
+#bannerCourses {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.bannerCourse {
+    display: flex;
+    flex-direction: column;
+    width: 128px;
+    height: 256px;
+    cursor: pointer;
+    background-color: var(--lightBlue);
+    border-radius: 16px;
+}
+
+.bannerCourse:hover {
+    transform: scale(1.025);
+}
+
+.bannerCourse div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#noeud1 {
+    background-image: url(../images/knots/knot1.png);
+}
+
+#noeud2 {
+    background-image: url(../images/knots/knot2.png);
+}
+
+#noeud3 {
+    background-image: url(../images/knots/knot3.png);
+}
+
+#noeud4 {
+    background-image: url(../images/knots/knot4.png);
+}
+
+h2 {
+    font-size: 32px;
+}
+
+#method {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    justify-content: start;
+}
+
+#method h3 {
+    font-size: 20px;
+    text-align: center;
+    margin: 12px auto;
+}
+
+#method grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+#method grid div {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    padding: 12px;
+}
+
+#method grid div img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+#method .step {
+    font-size: 16px;
+    width: 128px;
+    height: 128px;
+    align-items: center;
+    text-align: center;
+    border-radius: 16px;
+    background-color: var(--lightBlue);
+}
+
+#method .horizontalArrow {
+    height: 128px;
+}
+
+#method .verticalArrow {
+    width: 128px;
+}
+
+#comments {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 16px;
+}
+
+comment {
+    display: flex;
+    height: 104px;
+    padding: 20px;
+    background-color: var(--lightBlue);
+    border-radius: 16px;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+comment pfp {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: solid 4px var(--darkBlue);
+    background-position: center;
+    background-size: cover;
+}
+
+#pfp1 {
+    background-image: url(../images/comments/pfp1.png);
+}
+
+#pfp2 {
+    background-image: url(../images/comments/pfp2.png);
+}
+
+#pfp3 {
+    background-image: url(../images/comments/pfp3.png);
+}
+
+#pfp4 {
+    background-image: url(../images/comments/pfp4.png);
+}
+
+commentContent {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 8px;
+}
+
+commentContent p {
+    font-size: 12px;
+}
+
+commentContent stars {
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    gap: 4px;
+}
+
+star,
+emptyStar {
+    width: 32px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+star {
+    background-image: url(../images/comments/star.svg);
+}
+
+emptyStar {
+    background-image: url(../images/comments/emptyStar.svg);
+}
+
+@media only screen and (max-width: 1088px) {
+    main {
+        width: 576px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 32px;
+        grid-row-gap: 32px;
+    }
+
+    #banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #method {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    #comments {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    main {
+        width: 384px;
+        gap: 0;
+    }
+
+    #banner {
+        margin-bottom: 16px;
+    }
+
+    #bannerText {
+        font-size: 24px;
+    }
+
+    #bannerCourses {
+        gap: 8px;
+    }
+
+    .bannerCourse {
+        width: 80px;
+        height: 160px;
+        border-radius: 8px;
+    }
+
+    .bannerCourse div {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #method h3 {
+        font-size: 14px;
+        margin: 8px auto;
+    }
+
+    #method grid {
+        gap: 8px;
+    }
+
+    #method grid div {
+        width: 64px;
+        height: 64px;
+        padding: 8px;
+    }
+
+    #method grid div img {
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+    }
+
+    #method .step {
+        font-size: 12px;
+        width: 104px;
+        height: 104px;
+        border-radius: 8px;
+    }
+
+    #method .horizontalArrow {
+        height: 104px;
+    }
+
+    #method .verticalArrow {
+        width: 104px;
+    }
+
+    #comments {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 16px;
+    }
+
+    comment {
+        height: 128px;
+        padding: 16px;
+        border-radius: 8px;
+        gap: 16px;
+    }
+
+    comment pfp {
+        width: 64px;
+        height: 64px;
+    }
+}
