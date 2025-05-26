@@ -10,6 +10,7 @@
 .horizontalArrow,
 .verticalArrow,
 star,
-emptyStar {
+emptyStar,
+contacts div::before {
     filter: invert(1);
 }

@@ -171,6 +171,11 @@ p {
     font-size: 12px;
 }
 
+input,
+textarea {
+    outline: none;
+}
+
 @media only screen and (max-width: 1088px) {
     #coursesHeader nav {
         display: flex;
@@ -207,10 +212,6 @@ p {
 
     main {
         width: 576px;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-column-gap: 32px;
-        grid-row-gap: 32px;
     }
 
     footer a {

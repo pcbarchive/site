@@ -1,0 +1,117 @@
+contacts {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 16px;
+    text-align: center;
+    align-items: center;
+}
+
+contacts div {
+    font-size: 16px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+contacts div::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#email::before {
+    background-image: url(../images/contact/email.svg);
+}
+
+#phone::before {
+    background-image: url(../images/contact/phone.svg);
+}
+
+#home::before {
+    background-image: url(../images/contact/home.svg);
+}
+
+form {
+    width: 75%;
+    height: 384px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .25fr .25fr .75fr .25fr;
+    background-color: var(--darkBlue);
+    gap: 6px;
+    border: solid 6px var(--darkBlue);
+    border-radius: 10px;
+}
+
+form input,
+textarea {
+    display: block;
+    background-color: var(--lightBlue);
+    border: none;
+    font-size: 12px;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: none;
+    grid-area: 3 / 1 / 4 / 3;
+}
+
+form button {
+    display: block;
+    background-color: var(--lightBlue);
+    border: none;
+    font-size: 12px;
+    padding: 4px;
+    grid-area: 4 / 1 / 5 / 3;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: var(--mediumBlue);
+}
+
+@media only screen and (max-width: 1088px) {
+    form {
+        width: 100%;
+    }
+
+    contacts div {
+        font-size: 12px;
+    }
+
+    contacts div::before {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    contacts {
+        flex-direction: column;
+    }
+
+    contacts div {
+        font-size: 16px;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+        grid-template-rows: .25fr .25fr .25fr .25fr .75fr .25fr;
+    }
+
+    textarea {
+        grid-area: 5 / 1 / 6 / 2;
+    }
+
+    form button {
+        grid-area: 6 / 1 / 7 / 2;
+    }
+}

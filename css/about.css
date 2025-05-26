@@ -12,6 +12,7 @@ teacher {
     display: flex;
     align-items: center;
     gap: 24px;
+    text-align: left;
 }
 
 .invertTeacher {
@@ -28,6 +29,7 @@ teacher img {
 
 teacher h2 {
     font-size: 24px;
+    margin-bottom: 8px;
 }
 
 @media only screen and (max-width: 1088px) {
